@@ -1,0 +1,45 @@
+.tiktok {
+    color: #fff;
+    transition: color 1s;
+}
+
+.tiktok:hover {
+    color: #FF0000;
+}
+
+.instagram {
+    color: #fff;
+    transition: color 1000ms ease-in-out;
+}
+
+.instagram:hover {
+    color: #FF0000;
+}
+
+.twiter {
+    color: #fff;
+    transition: color 1000ms ease-in-out;
+}
+
+.twiter:hover {
+    color: #FF0000;
+}
+
+.youtube {
+    color: #fff;
+    transition: color 1000ms ease-in-out;
+}
+
+.youtube:hover {
+    color: #FF0000;
+}
+
+.facebook {
+    color: #fff;
+    transition: color 1000ms ease-in-out;
+}
+
+.facebook:hover {
+    color: #ff0000;
+}
+
