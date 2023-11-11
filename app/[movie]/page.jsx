@@ -12,12 +12,26 @@ const greatvibes = Great_Vibes({
 })
 
 export async function generateStaticParams() {
-  const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}`);
-  const res = await data.json();
-  return res.results.map((movie) => (
-    { movie: toString(movie.id) }
-  ))
+  try {
+      const data = await fetch(`https://api.example.com/movies`); // Replace with your actual API endpoint
+      const res = await data.json();
+
+      // Check if res.results is defined and is an array
+      if (res && res.results && Array.isArray(res.results)) {
+          return res.results.map((movie) => (
+              { movie: String(movie.id) }
+          ));
+      } else {
+          // Handle the case where res.results is undefined or not an array
+          console.error("Results is undefined or not an array:", res.results);
+          return [];
+      }
+  } catch (error) {
+      console.error("Error in generateStaticParams:", error);
+      return [];
+  }
 }
+
 
 async function MoveDetail({ params }) {
 
