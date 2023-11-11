@@ -1,6 +1,6 @@
 import Image from "next/image";
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import { Great_Vibes } from '@next/font/google'
+import { Great_Vibes } from "next/font/google"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBox, faHeart } from "@fortawesome/free-solid-svg-icons";
 

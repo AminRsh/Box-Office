@@ -1,4 +1,4 @@
-import { Great_Vibes } from '@next/font/google'
+import { Great_Vibes } from "next/font/google"
 import Link from 'next/link'
 // import Carousel from './components/carousel/Carousel'
 //https://www.disneyplus.com/movies/peter-pan-wendy/147B2rQASB09

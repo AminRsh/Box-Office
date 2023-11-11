@@ -1,5 +1,5 @@
 import './globals.css'
-import { Great_Vibes } from '@next/font/google'
+import { Great_Vibes } from "next/font/google"
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 
